@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog App</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <h1>Dog App</h1>
+
+  <form id="dog-form">
+    <input type="text" id="dog-name" placeholder="Hundens namn" required />
+    <input type="number" id="dog-age" placeholder="Ålder" min="0" required />
+    <select id="dog-color">
+      <option value="Svart">Svart</option>
+      <option value="Vit">Vit</option>
+      <option value="Grå">Grå</option>
+      <option value="Orange">Orange</option>
+      <option value="Brun">Brun</option>
+    </select>
+    <select id="dog-breed">
+     
+    </select>
+    <button type="submit">Lägg till hund</button>
+  </form>
+
+
+  <h2>Lista med hundar</h2>
+  <ul id="dog-list"></ul>
+
+  
+  <h2>Statistik</h2>
+  <div id="dog-stats"></div>
+
+  <script type="module" src="/src/main.ts" ></script>
+</body>
+
+</html>
